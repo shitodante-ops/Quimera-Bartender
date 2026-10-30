@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEGURIDAD: política de contenido (solo recursos propios + Google Fonts) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- SEO -->
+  <title>Quimera Bartender Service | Coctelería de autor para bodas y eventos</title>
+  <meta name="description" content="Coctelería y mixología de autor para bodas, XV años y eventos corporativos. Barras elegantes, servicio personalizado y cócteles memorables. Cotiza tu evento.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080909">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Al publicar el sitio: reemplaza TU-DOMINIO.com y descomenta este bloque
+  <link rel="canonical" href="https://TU-DOMINIO.com/">
+  <meta property="og:image" content="https://TU-DOMINIO.com/assets/imagenes/Boda%20-%20tragos-logo%20y%20paisaje/barras%20montadas%20mas%20paisaje.jpg">
+  <meta property="og:url" content="https://TU-DOMINIO.com/">
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Quimera Bartender Service">
+  <meta property="og:title" content="Quimera Bartender Service | Coctelería de autor">
+  <meta property="og:description" content="El arte de crear momentos extraordinarios: coctelería de autor para bodas, XV años y eventos corporativos.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23080909'/%3E%3Ctext x='32' y='47' font-size='46' text-anchor='middle' fill='%23c9a66b' font-family='Georgia,serif'%3EQ%3C/text%3E%3C/svg%3E">
+
+  <!-- RENDIMIENTO: la imagen principal (LCP) se pide cuanto antes -->
+  <link rel="preload" as="image" href="assets/imagenes/Boda%20-%20tragos-logo%20y%20paisaje/barras%20montadas%20mas%20paisaje.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+
+  <!-- SEO: datos estructurados (los bloques JSON no se ejecutan, no los afecta la CSP) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Quimera Bartender Service",
+    "description": "Servicio de coctelería y mixología de autor para bodas, XV años y eventos corporativos.",
+    "telephone": "+524641141329",
+    "founder": { "@type": "Person", "name": "Fernando Alcocer" },
+    "sameAs": [
+      "https://www.instagram.com/quimera.bartender/",
+      "https://www.facebook.com/share/19Kgt4F39P/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Iconos reutilizables (se declaran una vez y se usan con <use>) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.2" cy="6.8" r=".6"/>
+    </symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path d="M3 21l1.7-5A9 9 0 1 1 8 19.3z"/>
+      <path d="M9.2 8.6c-.3.9.2 2.300 1.500 3.700 1.400 1.400 2.800 2 3.800 1.700l.9-.9-1.800-1-.8.600c-.8-.3-1.700-1.100-2.100-2l.6-.8-1-1.800z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M8 7h9v9"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ANIMACION DE INICIO -->
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="splash-content">
+      <span class="splash-logo">Q</span>
+      <h2>QUIMERA</h2>
+      <p>BARTENDER SERVICE</p>
+    </div>
+  </div>
+
+  <!-- NAVEGACION -->
+  <header class="header">
+    <nav class="navbar container" aria-label="Navegación principal">
+
+      <a href="#inicio" class="brand" aria-label="Quimera Bartender Service, ir al inicio">
+        <span class="brand-icon" aria-hidden="true">Q</span>
+        <span class="brand-text" aria-hidden="true">
+          <strong>QUIMERA</strong>
+          <small>BARTENDER SERVICE</small>
+        </span>
+      </a>
+
+      <button id="menu-toggle" class="menu-toggle" type="button"
+              aria-label="Abrir menú" aria-controls="nav-links" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="nav-links" class="nav-links">
+        <a href="#nosotros">Experiencia</a>
+        <a href="#catalogo">Cócteles</a>
+        <a href="#temporada">Temporada</a>
+        <a href="#galeria">Galería</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#contacto" class="nav-cta">Cotizar evento</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <img class="hero-media"
+           src="assets/imagenes/Boda%20-%20tragos-logo%20y%20paisaje/barras%20montadas%20mas%20paisaje.jpg"
+           alt="" width="1317" height="878" fetchpriority="high" decoding="async">
+      <div class="hero-shade"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow">COCTELERÍA DE AUTOR · EVENTOS PRIVADOS</span>
+
+        <h1 id="hero-title">
+          El arte de crear
+          <em>momentos extraordinarios.</em>
+        </h1>
+
+        <p>
+          Una experiencia de barra donde la elegancia,
+          la creatividad y los detalles convierten
+          cada celebración en algo memorable.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contacto" class="btn btn-gold">Cotizar mi evento</a>
+          <a href="#catalogo" class="btn btn-outline">Explorar la carta</a>
+        </div>
+
+        <div class="hero-signature">
+          <span aria-hidden="true"></span>
+          FERNANDO ALCOCER · BARTENDER PROFESIONAL
+        </div>
+      </div>
+
+      <span class="hero-side" aria-hidden="true">THE ART OF MIXOLOGY</span>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="nosotros" class="section about" aria-labelledby="nosotros-title">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">01 / NUESTRA ESENCIA</span>
+          <h2 id="nosotros-title" class="section-title">
+            Más que bebidas.
+            <em>Una experiencia.</em>
+          </h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            Quimera Bartender Service es un concepto
+            de servicio de barra para eventos dirigido
+            por Fernando Alcocer.
+          </p>
+          <p>
+            Nuestra propuesta combina presentación,
+            hospitalidad y atención personalizada
+            para transformar los momentos especiales
+            en recuerdos extraordinarios.
+          </p>
+
+          <ul class="tags">
+            <li>Eventos privados</li>
+            <li>Coctelería de autor</li>
+            <li>Servicio personalizado</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section id="catalogo" class="section catalog" aria-labelledby="catalogo-title">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">02 / NUESTRA CARTA</span>
+          <h2 id="catalogo-title" class="section-title">
+            Sabores con <em>personalidad.</em>
+          </h2>
+          <p>
+            Una selección conceptual para mostrar
+            cómo lucirá nuestra carta de bebidas.
+          </p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar bebidas">
+          <button type="button" class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter" data-filter="citricos" aria-pressed="false">Cítricos</button>
+          <button type="button" class="filter" data-filter="botanicos" aria-pressed="false">Botánicos</button>
+          <button type="button" class="filter" data-filter="frutales" aria-pressed="false">Frutales</button>
+        </div>
+
+        <div id="cocktail-grid" class="cocktail-grid"></div>
+        <p id="catalog-status" class="visually-hidden" role="status"></p>
+
+        <p class="small-note">
+          Catálogo ilustrativo. Los nombres y las
+          recetas deberán confirmarse con Fernando.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEMPORADA -->
+    <section id="temporada" class="season" aria-labelledby="temporada-title">
+      <div class="season-photo">
+        <img src="assets/imagenes/Boda%20-%20tragos-logo%20y%20paisaje/fuegos%20artificiales%20mas%20novios%20super%20calidad.jpg"
+             alt="Pareja de novios de la mano bajo fuegos artificiales"
+             width="585" height="878" loading="lazy" decoding="async">
+      </div>
+
+      <div class="season-content">
+        <span class="eyebrow">03 / EDICIÓN DE TEMPORADA</span>
+
+        <h2 id="temporada-title" class="section-title">
+          La belleza de lo
+          <em>irrepetible.</em>
+        </h2>
+
+        <p>
+          Una selección especial de sabores,
+          presentaciones y experiencias diseñadas
+          alrededor de cada temporada.
+        </p>
+
+        <div class="season-feature">
+          <span>SELECCIÓN DE MUESTRA</span>
+          <h3>Áurea Citrus</h3>
+          <p>Notas cítricas y una presentación sofisticada.</p>
+        </div>
+
+        <a href="#contacto" class="gold-link">Solicitar menú para mi evento ↗</a>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="section gallery" aria-labelledby="galeria-title">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">04 / MOMENTOS QUIMERA</span>
+          <h2 id="galeria-title" class="section-title">
+            Cada evento cuenta
+            <em>una historia.</em>
+          </h2>
+          <p>
+            Una muestra de barras, presentaciones
+            y celebraciones reales de Quimera.
+          </p>
+        </div>
+
+        <div id="gallery-grid" class="gallery-grid"></div>
+
+        <a class="gold-link gallery-more"
+           href="https://www.instagram.com/quimera.bartender/"
+           target="_blank" rel="noopener noreferrer">
+          Ver más momentos en Instagram ↗
+          <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- AGENDA -->
+    <section id="agenda" class="section agenda" aria-labelledby="agenda-title">
+      <div class="container agenda-grid">
+
+        <div class="agenda-copy">
+          <span class="eyebrow">05 / AGENDA DE EVENTOS</span>
+
+          <h2 id="agenda-title" class="section-title">
+            Tu fecha merece
+            <em>algo especial.</em>
+          </h2>
+
+          <p>
+            Selecciona la fecha de tu celebración
+            y envíanos una solicitud.
+          </p>
+
+          <p class="small-note">
+            La disponibilidad debe ser confirmada
+            directamente con Fernando. Este calendario
+            no realiza reservaciones automáticas.
+          </p>
+        </div>
+
+        <div class="calendar">
+          <div class="calendar-header">
+            <h3 id="month-title" aria-live="polite"></h3>
+
+            <div class="calendar-buttons">
+              <button id="prev-month" type="button" aria-label="Mes anterior">←</button>
+              <button id="next-month" type="button" aria-label="Mes siguiente">→</button>
+            </div>
+          </div>
+
+          <div class="weekdays" aria-hidden="true">
+            <span>L</span><span>M</span><span>M</span>
+            <span>J</span><span>V</span><span>S</span><span>D</span>
+          </div>
+
+          <div id="calendar-days" class="calendar-days" role="group" aria-labelledby="month-title"></div>
+
+          <p id="selected-date" class="selected-date" aria-live="polite">
+            Selecciona una fecha para consultar.
+          </p>
+
+          <a href="#contacto" class="btn btn-gold calendar-cta">Solicitar disponibilidad</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="resenas" class="section reviews" aria-labelledby="resenas-title">
+      <div class="container reviews-grid">
+
+        <div>
+          <span class="eyebrow">06 / TESTIMONIOS</span>
+
+          <h2 id="resenas-title" class="section-title">
+            Las mejores historias
+            <em>las cuentan otros.</em>
+          </h2>
+
+          <p class="small-note">
+            Espacio reservado para reseñas
+            verificadas de clientes de Quimera.
+          </p>
+        </div>
+
+        <figure class="review-card" aria-label="Testimonios de clientes">
+          <span class="quote-mark" aria-hidden="true">“</span>
+
+          <blockquote id="review-text" aria-live="polite"></blockquote>
+
+          <figcaption class="review-bottom">
+            <div>
+              <strong id="review-author"></strong>
+              <small id="review-detail"></small>
+            </div>
+
+            <div class="review-controls">
+              <button id="review-prev" type="button" aria-label="Reseña anterior">←</button>
+              <button id="review-next" type="button" aria-label="Reseña siguiente">→</button>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact" aria-labelledby="contacto-title">
+      <div class="container contact-grid">
+
+        <div>
+          <span class="eyebrow">07 / CONTACTO</span>
+
+          <h2 id="contacto-title" class="section-title">
+            Hagamos de tu evento
+            <em>algo inolvidable.</em>
+          </h2>
+
+          <p>
+            Cuéntanos sobre tu celebración para
+            preparar una solicitud de cotización.
+          </p>
+
+          <!-- REDES SOCIALES -->
+          <div class="social" role="region" aria-labelledby="social-title">
+            <h3 id="social-title" class="social-title">Síguenos y escríbenos</h3>
+
+            <ul class="social-list">
+              <li>
+                <a class="social-card" target="_blank" rel="noopener noreferrer"
+                   href="https://wa.me/5214641141329?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20evento%20con%20Quimera%20Bartender.">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+                  <span class="social-text">
+                    <strong>WhatsApp</strong>
+                    <small>+52 1 464 114 1329</small>
+                  </span>
+                  <svg class="icon icon-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                  <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-card" target="_blank" rel="noopener noreferrer"
+                   href="https://www.instagram.com/quimera.bartender/">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
+                  <span class="social-text">
+                    <strong>Instagram</strong>
+                    <small>@quimera.bartender</small>
+                  </span>
+                  <svg class="icon icon-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                  <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-card" target="_blank" rel="noopener noreferrer"
+                   href="https://www.facebook.com/share/19Kgt4F39P/">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg>
+                  <span class="social-text">
+                    <strong>Facebook</strong>
+                    <small>Quimera Bartender</small>
+                  </span>
+                  <svg class="icon icon-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg>
+                  <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form id="quote-form" class="contact-form" autocomplete="on">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name"
+                     minlength="2" maxlength="80" required placeholder="Nombre completo">
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo electrónico *</label>
+              <input id="correo" name="correo" type="email" autocomplete="email"
+                     maxlength="254" required placeholder="correo@ejemplo.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tipo">Tipo de evento *</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Selecciona una opción</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="invitados">Número de invitados</label>
+              <input id="invitados" name="invitados" type="number" inputmode="numeric"
+                     min="1" max="9999" placeholder="Ej. 80">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fecha">Fecha del evento *</label>
+            <input id="fecha" name="fecha" type="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Detalles adicionales</label>
+            <textarea id="mensaje" name="mensaje" rows="4" maxlength="600"
+                      placeholder="Lugar, horario y detalles importantes"></textarea>
+          </div>
+
+          <!-- Trampa anti-bots: las personas no la ven ni la llenan -->
+          <div class="hp" aria-hidden="true">
+            <label for="sitio_web">No llenar este campo</label>
+            <input id="sitio_web" name="sitio_web" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-block">Preparar cotización ↗</button>
+
+          <p class="small-note">
+            Prepararemos tu solicitud para enviarla por WhatsApp
+            o copiarla. No almacenamos tus datos en este sitio.
+          </p>
+
+          <div id="quote-result" class="quote-result" hidden>
+            <label for="quote-output">Tu solicitud</label>
+            <textarea id="quote-output" rows="9" readonly></textarea>
+            <div class="quote-actions">
+              <a id="send-whatsapp" class="btn btn-gold" target="_blank" rel="noopener noreferrer" href="#">
+                Enviar por WhatsApp
+                <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+              </a>
+              <button id="copy-quote" class="btn btn-outline" type="button">Copiar mensaje</button>
+            </div>
+          </div>
+
+          <p id="form-status" role="status"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand"><span aria-hidden="true">Q</span> <span>QUIMERA</span></div>
+        <p>BARTENDER SERVICE · FERNANDO ALCOCER</p>
+      </div>
+
+      <ul class="footer-social" aria-label="Redes sociales de Quimera">
+        <li>
+          <a href="https://www.instagram.com/quimera.bartender/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (se abre en una pestaña nueva)">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/share/19Kgt4F39P/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (se abre en una pestaña nueva)">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/5214641141329" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (se abre en una pestaña nueva)">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer-top" href="#inicio">Volver arriba ↑</a>
+    </div>
+
+    <p class="footer-legal container">© <span id="year">2026</span> Quimera Bartender Service</p>
+  </footer>
+
+  <!-- VISOR DE GALERIA -->
+  <dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-inner">
+      <button id="close-lightbox" class="lightbox-close" type="button" aria-label="Cerrar imagen">×</button>
+
+      <img id="lightbox-img" alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+      <p id="lightbox-caption"></p>
+
+      <div class="lightbox-controls">
+        <button id="gallery-prev" type="button" aria-label="Imagen anterior">←</button>
+        <button id="gallery-next" type="button" aria-label="Imagen siguiente">→</button>
+      </div>
+    </div>
+  </dialog>
+
+</body>
+</html>
